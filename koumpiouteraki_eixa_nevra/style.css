@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.calculator{
+    position: absolute;
+    left: 50%;
+    top : 10%;
+    transform: translate(-50%, 0);
+    border: 2px #000 solid;
+}
+
+.calContainer{
+    width: 350px;
+    height: 400px;
+    padding: 5px; 
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+.screen{
+    max-width: 350px;
+    max-height: 131px;
+    min-height: 131px;
+    padding: 10px;
+    background-color: #eee;
+}
+
+.prev{
+    max-width: 350px;
+    max-height: 60px;
+    padding: 5px;
+}
+
+.prevContainer{
+    display: flex;
+}
+
+.input{
+    max-width: 350px;
+    max-height: 60px;
+    padding: 10px;
+}
+
+.output{
+    max-width: 350px;
+    max-height: 60px;
+    padding: 5px;
+}
+
+.btn{
+    background: rgb(94, 153, 192);
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.op_btn{
+    background: rgb(164, 94, 192);
+}
+
+.op_btn:hover{
+    cursor: pointer;
+}
+
+.cl_btn{
+    background: rgb(94, 192, 176);
+}
+
+.cl_btn:hover{
+    cursor: pointer;
+}
+
+.eq_btn{
+    background: rgb(192, 94, 140);
+}
+
+.eq_btn:hover{
+    cursor: pointer;
+}

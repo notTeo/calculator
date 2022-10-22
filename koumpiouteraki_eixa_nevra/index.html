@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="calculator" class="calculator">
+        <div class="screen">
+            <div class="prevContainer">
+                <h3 class="prev">prev:</h3>
+                <h3 id="prev" class="prev"></h3>
+            </div>
+            <h2 id="input" class="input"></h2>
+            <h3 id="output" class="output"></h3>
+        </div>
+        <div id="calContainer" class="calContainer">           
+            <button class="btn" value="number" onclick="getInput(this.innerHTML)" >1</button>
+            <button class="btn" value="number" onclick="getInput(this.innerHTML)">2</button>
+            <button class="btn" value="number" onclick="getInput(this.innerHTML)">3</button>
+            <button class="op_btn" value="operator" onclick="getOperator(this.innerHTML)">+</button>
+            <button class="btn" value="number" onclick="getInput(this.innerHTML)">4</button>
+            <button class="btn" value="number" onclick="getInput(this.innerHTML)">5</button>
+            <button class="btn" value="number" onclick="getInput(this.innerHTML)">6</button>
+            <button class="op_btn" value="operator" onclick="getOperator(this.innerHTML)">-</button>
+            <button class="btn" value="number" onclick="getInput(this.innerHTML)">7</button>
+            <button class="btn" value="number" onclick="getInput(this.innerHTML)">8</button>
+            <button class="btn" value="number" onclick="getInput(this.innerHTML)">9</button>
+            <button class="op_btn" value="operator"  onclick="getOperator(this.innerHTML)">*</button>
+            <button class="cl_btn" onclick="clearAll()">c</button>
+            <button class="btn" value="number" onclick="getInput(this.innerHTML)">0</button>
+            <button class="op_btn" value="operator"  onclick="getOperator(this.innerHTML)">.</button>           
+            <button class="op_btn" value="operator" onclick="getOperator(this.innerHTML)">/</button>
+            <button class="cl_btn" onclick="getPrev()">p</button>
+            <button class="eq_btn" value="=" onclick="equal()">=</button>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
